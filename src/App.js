@@ -32,10 +32,12 @@ const App = () => (
         </div>
       </Layout>
       <div className="footer">
-        <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2021
-          <Link to="/">
-            Cryptoverse Inc.
-          </Link> <br />
+        <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>© 2022 
+        <br />
+          <a href="https://thompsonmt.netlify.app/" target='_blank'>ThompsonMT</a>
+          {/* <Link to="/">
+             ThompsonMT
+          </Link> <br /> */} <br />
           All Rights Reserved.
         </Typography.Title>
         <Space>
