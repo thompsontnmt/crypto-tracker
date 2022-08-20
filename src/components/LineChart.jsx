@@ -3,17 +3,18 @@ import { Line as ChartJS } from 'chart.js/auto'
 import { Line }            from 'react-chartjs-2'
 import { Col, Row, Typography } from 'antd';
 
+
 const { Title } = Typography;
 
 const LineChart = ({ coinHistory, currentPrice, coinName }) => {
-  const coinPrice = [];
-  const coinTimestamp = [];
-
-  for(let i = 0; i < coinHistory?.data?.history?.length; i += 1) {
-      coinPrice.push(coinHistory.data.history[i].price)
-      coinTimestamp.push(new Date(coinHistory.data.history[i].timestamp).toLocaleString());
-  };
-
+    const coinPrice = [];
+    const coinTimestamp = [];
+    
+    for(let i = 0; i < coinHistory?.data?.history?.length; i += 1) {
+        coinPrice.push(coinHistory.data.history[i].price)
+        coinTimestamp.push(new Date(coinHistory.data.history[i].timestamp).toLocaleString());
+    };
+    
   const data = {
       labels: coinTimestamp,
       datasets: [

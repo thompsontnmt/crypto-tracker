@@ -34,7 +34,7 @@ const App = () => (
       <div className="footer">
         <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>© 2022 
         <br />
-          <a href="https://thompsonmt.netlify.app/" target='_blank'>ThompsonMT</a>
+          <a href="https://thompsonmt.netlify.app/" target='_blank' rel=" noreferrer">ThompsonMT</a>
           {/* <Link to="/">
              ThompsonMT
           </Link> <br /> */} <br />

@@ -377,3 +377,23 @@ width: 70%;
     padding: 20px;
     align-items: center;
 }
+
+.loader-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.loader{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 10px solid #e6e6e6;
+    border-top-color: #808080;
+    animation: spin 1s linear infinite;
+}
