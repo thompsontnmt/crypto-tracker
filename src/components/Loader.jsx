@@ -1,13 +1,12 @@
 import React from 'react';
+import { Spin } from 'antd';
 
-const Loader = (props) => {
+const Loader = () => {
     return (
-      <div className="loader-container">
-          <div className="loader">
-
-          </div>
+      <div className="loader">
+          <Spin />
       </div>
     )
   }
 
-export default Loader
+export default Loader;
